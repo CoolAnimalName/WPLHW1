@@ -1,0 +1,100 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    align-items: stretch;
+}
+
+.wrapper>* {
+    flex: 1 100%;
+}
+
+.header {
+    background: #8898B9;
+}
+
+.main {
+    text-align: left;
+    background:#F5F7F7;
+    scroll-behavior: smooth;
+}
+
+.aside-left {
+    min-height: 100vh;
+    max-width: 15vw;
+    background: #89A0FF;
+    color: #F5F7F7;
+}
+
+.aside-left nav ul {
+    text-align: left;
+
+}
+
+.aside-right {
+    background: #8898B9;
+    margin-left: auto;
+    min-height: 100vh;
+    max-width: 10vw;
+}
+
+.navbar .navbar-expand-lg .navbar-light .bg-light {
+    text-align: center;
+    background: 8898B9;
+}
+
+article {
+    border-style: dotted;
+    overflow:hidden
+}
+
+.article-home {
+    padding-top: 5vw;
+    padding-left: 2vw;
+    margin-right: 3vw;
+}
+
+.article-home p {
+   margin-left: 5vw;
+}
+
+#bootstrap-overrides .navlink a:visited {
+    color: #010615;
+}
+
+#bootstrap-overrides .navlink a:hover, a:active {
+    color: #8898B9;
+}
+
+#bootstrap-overrides .navlink a {
+    color: #F5F7F7;
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1 0 0;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 3 0px;
+    }
+
+    .aside-left {
+        order: 1;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .aside-right {
+        order: 3;
+    }
+
+    .footer {
+        order: 4;
+    }
+}
