@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    flex-flow: row wrap;
+    text-align: center;
+    flex-grow: 3;
+}
+
+#sidebar-left {
+    background-color: gray;
+    min-width: 15vw;
+    max-width: 15vw;
+    min-height: 100vh;
+}
+
+#content-box {
+    background-color: red;
+    max-width: 70vw;
+    min-height: 100vh;
+}
+
+#sidebar-right {
+    background-color: green;
+    margin-left: auto;
+    min-width: 15vw;
+    max-width: 15vw;
+    min-height: 100vh;
+}
+
+#footer {
+    background-color: blue;
+    align-self: flex-end;
+    min-width: 98vw;
+    max-width: 98vw;
+}
+
+@media all {
+    #content-box { flex: 2 0px; }
+    #footer { order: 4; }
+}
