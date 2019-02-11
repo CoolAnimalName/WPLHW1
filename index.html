@@ -4,6 +4,8 @@
 <head>
     <title>Matthew Villarreal (miv140130)</title>
     <meta charset="utf-8" />
+    <meta name="description" content="This is the website for Matthew Villarreal (miv140130), created for a CS6314.501, hosted on UTD's server">
+    <meta name="keywords" content="personal, homepage, matthew, matt, villarreal, miv140130, cs6314.501, WPL, html, css, bootstrap, fontawesome, jquery">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32x32.png">
@@ -15,8 +17,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/index.css" />
 </head>
 
-<body class="wrapper" id="#bootstrap-overrides">
-    <header class="header">
+<body class="wrapper">
+    <header class="header" id="#bootstrap-overrides">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
                 <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
@@ -42,8 +44,9 @@
     </header>
 
     <section class="main">
-        <h2>Welcome!</h2>
+        <h6 class="hide-this">Hidden Text to remove warning</h6>
         <article class="article article-home">
+            <h2>Welcome!</h2>
             <a id="home"></a>
             <img src="static/img/24195522.jpg" width="200" height="200" alt="matt" />
             <table>
@@ -83,8 +86,8 @@
             </p>
             <img src="static/img/IMG_0184.jpg" width="200" height="275" alt="cool-pic-of-me" />
             <p>
-                When not drinking copious amounts of tea to stay awake while studying, Matt is an avid musician and can
-                be
+                When not drinking copious amounts of tea and coffee to stay awake while studying, Matt is an avid
+                musician and can be
                 found writing music, practicing his instruments (guitar, bass, piano, trumpet), or attending concerts
                 downtown. He also enjoys longboarding, playing videogames, rock climbing, and traveling across the
                 country.
@@ -97,8 +100,8 @@
             <p>
                 One of my current, non NDA projects for my data science position involves creating an in-house triage
                 queue using
-                the Flask framework to handle trending issues for Citi digital products. The initiative currrently
-                employes NLP techniques to discover and categorize and trending issues voiced by consumers, but until
+                the Flask framework to handle trending issues for Citi digital products. The initiative currently
+                employs NLP techniques to discover and categorize and trending issues voiced by consumers, but until
                 the algorithms mature, some manual intervention will be needed to confirm the issues, prioritize it,
                 and automatically send the formatted defect to the correct team's backlog, which will be handled by
                 this application.
@@ -106,12 +109,12 @@
             <img src="static/img/addressbook.jpg" width="350" height="200" alt="database-app" />
             <p>
                 For a recent class project, I had to create a full-stack address book application. With a MySQL
-                database and Flask as the front-end framework, the user was able to query the addressbook with a
-                variable number of parameters, edit, and delete individual entries.
+                database and Flask as the front-end framework, the user was able to query the address book with a
+                variable number of parameters, as well as edit and delete individual entries.
             </p>
         </article>
         <hr class="line-break">
-        
+
         <article class="article article-contact">
             <div class="grid-container">
                 <div class="item-1">
@@ -123,8 +126,8 @@
                         <div class="contact-2">
                             <p>Email <i class="fas fa-envelope"></i></p>
                         </div>
-                        <div class=contact-3">
-                            <a href="mailto:miv140130@utdallas.edu">miv140130@utdallas.edu</a></p>
+                        <div class="contact-3">
+                            <a href="mailto:miv140130@utdallas.edu">miv140130@utdallas.edu</a>
                         </div>
                     </div>
                 </div>
@@ -148,6 +151,10 @@
 
     <aside class="aside aside-right">
         <h4>Here are some pictures of cats that I like</h4>
+        <img src="static/img/food-cat.jpg" width="150" height="200" alt="food-cat" />
+        <img src="static/img/snow-cat.jpg" width="150" height="200" alt="snow-cat" />
+        <img src="static/img/sleeping-costume.jpg" width="150" height="200" alt="sleeping-cat" />
+        <img src="static/img/minion-cap.jpg" width="150" height="200" alt="minion-cat" />
     </aside>
 
     <footer class="footer">
@@ -160,6 +167,17 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a.nav-link").click(function (event) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top
+                }, 800);
+            });
+        });
+    </script>
 </body>
 
 </html>

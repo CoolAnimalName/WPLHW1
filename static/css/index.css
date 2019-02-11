@@ -16,14 +16,14 @@
 
 .main {
     text-align: left;
-    background:#F5F7F7;
+    background: #F5F7F7;
     scroll-behavior: smooth;
 }
 
-.main h2 {
-    padding-top: 3vh;
-    padding-left: 2vw;
-    margin-bottom: 2vh;
+.main .hide-this {
+    visibility: hidden;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .general-info {
@@ -32,10 +32,11 @@
     float: right;
     background: #89A0FF;
     margin-left: 10vw;
-    margin-top: 7vh; 
-    margin-right:10vw;
-    padding-right: 1vw; 
+    margin-top: 7vh;
+    margin-right: 10vw;
+    padding-right: 1vw;
 }
+
 .general-info td {
     color: #F5F7F7;
     padding-left: 1vw;
@@ -73,15 +74,23 @@
     font-size: 12pt;
 }
 
+.aside-right img {
+    margin-bottom: 5vh;
+}
+
 .article {
-    overflow:hidden;
+    overflow: hidden;
     padding-top: 3vh;
     padding-left: 2vw;
     margin-bottom: 2vh;
 }
 
 .article-home p {
-   margin-left: 0vw;
+    margin-left: 0vw;
+}
+
+.article-home h2 {
+    margin-bottom: 3vh;
 }
 
 .article-home img {
@@ -94,7 +103,6 @@
     margin-left: 2vw;
     margin-right: 12vw;
     margin-bottom: 5vh;
-
     float: right;
 }
 
@@ -120,7 +128,7 @@
     grid-template-columns: auto auto;
     border-radius: 20px;
     text-align: center;
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-bottom: 0vh;
     margin-right: 2vw;
     background: #89A0FF;
@@ -142,15 +150,12 @@
 }
 
 
-hr.line-break {
-    width: 70%;
-}
-
 #bootstrap-overrides .navlink a:visited {
     color: #010615;
 }
 
-#bootstrap-overrides .navlink a:hover, a:active {
+#bootstrap-overrides .navlink a:hover,
+a:active {
     color: #8898B9;
 }
 
@@ -158,14 +163,33 @@ hr.line-break {
     color: #F5F7F7;
 }
 
-#bootstrap-overrides p {
-    font-family: Helvetica;
-    font-weight: lighter;
+#bootstrap-overrides nav {
+    background: black;
 }
 
 p {
     font-weight: lighter;
     font-size: 12pt;
+}
+
+hr.line-break {
+    width: 70%;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
 }
 
 @media all and (min-width: 600px) {
