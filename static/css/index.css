@@ -20,6 +20,12 @@
     scroll-behavior: smooth;
 }
 
+.main h2 {
+    padding-top: 3vh;
+    padding-left: 2vw;
+    margin-bottom: 2vh;
+}
+
 .general-info {
     border-radius: 20px;
     text-align: left;
@@ -43,30 +49,35 @@
     color: #F5F7F7;
 }
 
-.aside-left nav ul {
-    text-align: left;
+.aside-left h4 {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
 
+.aside-left li {
+    text-align: left;
+    margin-left: 3vw;
+    margin-bottom: 1vw;
 }
 
 .aside-right {
     background: #8898B9;
     margin-left: auto;
     min-height: 100vh;
-    max-width: 10vw;
+    max-width: 15vw;
     color: #F5F7F7;
 }
 
-.navbar .navbar-expand-lg .navbar-light .bg-light {
-    text-align: center;
-    background: #8898B9;
+.aside-right h4 {
+    margin: 1vw 2vw 1vw 2vw;
+    font-size: 12pt;
 }
 
 .article {
-    border-style: dotted;
     overflow:hidden;
-    padding-top: 2vh;
+    padding-top: 3vh;
     padding-left: 2vw;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 
 .article-home p {
@@ -74,9 +85,24 @@
 }
 
 .article-home img {
-    margin-top: 1vh;
     margin-right: 1vw;
+    margin-bottom: 5vh;
     float: left;
+}
+
+.article-about img {
+    margin-left: 2vw;
+    margin-right: 12vw;
+    margin-bottom: 5vh;
+
+    float: right;
+}
+
+.article-projects img {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 5vh;
+    float: right;
 }
 
 .grid-container {
@@ -89,12 +115,35 @@
     grid-column-end: 3;
 }
 
-
 .contact-container {
+    display: grid;
+    grid-template-columns: auto auto;
     border-radius: 20px;
     text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+    margin-right: 2vw;
     background: #89A0FF;
     color: #F5F7F7;
+}
+
+.contact-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.contact-2 {
+    text-align: left;
+    margin-left: 4vw;
+}
+
+.contact-3 {
+    text-align: left;
+}
+
+
+hr.line-break {
+    width: 70%;
 }
 
 #bootstrap-overrides .navlink a:visited {
@@ -107,6 +156,16 @@
 
 #bootstrap-overrides .navlink a {
     color: #F5F7F7;
+}
+
+#bootstrap-overrides p {
+    font-family: Helvetica;
+    font-weight: lighter;
+}
+
+p {
+    font-weight: lighter;
+    font-size: 12pt;
 }
 
 @media all and (min-width: 600px) {
@@ -134,5 +193,11 @@
 
     .footer {
         order: 4;
+        text-align: center;
+    }
+
+    .footer p {
+        margin-top: 1vw;
+        margin-bottom: .5vw;
     }
 }
