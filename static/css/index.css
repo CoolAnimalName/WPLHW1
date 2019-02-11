@@ -20,6 +20,22 @@
     scroll-behavior: smooth;
 }
 
+.general-info {
+    border-radius: 20px;
+    text-align: left;
+    float: right;
+    background: #89A0FF;
+    margin-left: 10vw;
+    margin-top: 7vh; 
+    margin-right:10vw;
+    padding-right: 1vw; 
+}
+.general-info td {
+    color: #F5F7F7;
+    padding-left: 1vw;
+    font-size: 12pt;
+}
+
 .aside-left {
     min-height: 100vh;
     max-width: 15vw;
@@ -37,26 +53,48 @@
     margin-left: auto;
     min-height: 100vh;
     max-width: 10vw;
+    color: #F5F7F7;
 }
 
 .navbar .navbar-expand-lg .navbar-light .bg-light {
     text-align: center;
-    background: 8898B9;
+    background: #8898B9;
 }
 
-article {
+.article {
     border-style: dotted;
-    overflow:hidden
-}
-
-.article-home {
-    padding-top: 5vw;
+    overflow:hidden;
+    padding-top: 2vh;
     padding-left: 2vw;
-    margin-right: 3vw;
+    margin-bottom: 1vh;
 }
 
 .article-home p {
-   margin-left: 5vw;
+   margin-left: 0vw;
+}
+
+.article-home img {
+    margin-top: 1vh;
+    margin-right: 1vw;
+    float: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.item-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+.contact-container {
+    border-radius: 20px;
+    text-align: center;
+    background: #89A0FF;
+    color: #F5F7F7;
 }
 
 #bootstrap-overrides .navlink a:visited {

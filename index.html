@@ -2,19 +2,23 @@
 <html lang="en">
 
 <head>
-    <title>Assume title</title>
+    <title>Matthew Villarreal (miv140130)</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32x32.png">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+        crossorigin='anonymous'>
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/index.css" />
 </head>
 
-<body class="wrapper">
+<body class="wrapper" id="#bootstrap-overrides">
 
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="#bootstrap-overrides">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
                 <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
                     alt="">
@@ -22,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -41,54 +45,78 @@
     <section class="main">
 
         <article class="article article-home">
-            <div class="container-fluid">
-
-                <a name="home"></a>
-                <h1>Welcome</h1>
-                <img src="static/img/IMG_0791.jpg" align="left" width="200" height="250" alt="me" />
-                <p>This is my website for WPL. I am a UTD 2017 BS graduate of CS, persuing a masters in CS Intelligent
-                    Systems while working as a data scientist at Citigroup. I love to write music and cry to my friends</p>
-            </div>
-
+            <a id="home"></a>
+            <h2>Welcome</h2>
+            <img src="static/img/24195522.jpg" width="200" height="200" alt="me" />
+            <table>
+                <tbody class="general-info">
+                    <tr>
+                        <td>Name:</td>
+                        <td>Matthew Villarreal</td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td>22 (for now)</td>
+                    </tr>
+                    <tr>
+                        <td>Degrees:</td>
+                        <td>Bachelors in CS, UTD</td>
+                    </tr>
+                    <tr>
+                        <td>Favorite Time To Sleep:</td>
+                        <td>2:00am</td>
+                    </tr>
+                </tbody>
+            </table>
         </article>
+
         <article class="article article-about">
-            <a name="about"></a>
-            this is about me
+            <a id="about"></a>
+            <h4>About</h4>
+            <p>Born and raised in Dallas, Matt has developed a life-long interest in tech from a young age. \nSome of
+                my earliest memories involved my parents catching me playing roller-coaster tycoon on the family
+                computer late on a school-night.</p>
         </article>
         <article class="article article-projects">
-            <a name="projects"></a>
+            <a id="projects"></a>
+            <h4>Projects</h4>
             this is about my projects
         </article>
-        <article class="article article contact">
-            <a name="contact"></a>
-            this is how to hmu
+        <article class="article article-contact">
+            <div class="grid-container">
+                <div class="item-1">
+
+                    <a id="contact"></a>
+                    <div class="contact-container">
+                        <h4>Contact</h4>
+                        <p>email: <a href="mailto:miv140130@utdallas.edu">miv140130@utdallas.edu</a></p>
+                    </div>
+                </div>
+            </div>
         </article>
     </section>
 
-    <aside class="aside aside-left">Aside 1
-        <nav id="sidebar-left" class="navbar">
-            <ul class="list-unstyled components">
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <aside class="aside aside-left">
+        <h4>Links</h4>
+        <ul class="list-unstyled components">
+            <li>
+                <a href="https://www.linkedin.com/in/matthew-villarreal-309aa4129/" target="_blank"><i class='fab fa-linkedin'></i>
+                    LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://github.com/CoolAnimalName" target="_blank"><i class="fab fa-github-square"></i> GitHub</a>
+            </li>
+        </ul>
+
     </aside>
 
-    <aside class="aside aside-right">Aside 2
-        <p>a;sdgh;a arughashd a;sguha</p>
-        <a>askdhl</a>
+    <aside class="aside aside-right">
+        <h4>Here are some pictures of cats that I like</h4>
     </aside>
-    
+
     <footer class="footer">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="#bootstrap-overrides">
-            <p>© 2018 Copyright: <a href="#">miv140130@utd.com</a></p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <p>© 2019 a website by miv140130</p>
         </nav>
     </footer>
 
