@@ -19,10 +19,9 @@
 
 <body class="wrapper">
     <header class="header" id="#bootstrap-overrides">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">
-                <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top"
-                    alt="">
+                <img src="static/img/favicon-32x32.png" alt="logo">
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -46,9 +45,9 @@
     <section class="main">
         <h6 class="hide-this">Hidden Text to remove warning</h6>
         <article class="article article-home">
-            <h2>Welcome!</h2>
             <a id="home"></a>
-            <img src="static/img/24195522.jpg" width="200" height="200" alt="matt" />
+            <h2>Welcome!</h2>
+            <img src="static/img/24195522.jpg" alt="matt" />
             <table>
                 <tbody class="general-info">
                     <tr>
@@ -84,7 +83,7 @@
                 concentration in Intelligent Systems. He hopes to keep his sanity long enough to finish the graduate
                 program and achieve his dream of moving to the west coast and land positions on major AI/ML projects.
             </p>
-            <img src="static/img/IMG_0184.jpg" width="200" height="275" alt="cool-pic-of-me" />
+            <img src="static/img/IMG_0184.jpg" alt="cool-pic-of-me" />
             <p>
                 When not drinking copious amounts of tea and coffee to stay awake while studying, Matt is an avid
                 musician and can be
@@ -146,15 +145,14 @@
                 <a href="https://github.com/CoolAnimalName" target="_blank"><i class="fab fa-github-square"></i> GitHub</a>
             </li>
         </ul>
-
     </aside>
 
     <aside class="aside aside-right">
         <h4>Here are some pictures of cats that I like</h4>
-        <img src="static/img/food-cat.jpg" width="150" height="200" alt="food-cat" />
-        <img src="static/img/snow-cat.jpg" width="150" height="200" alt="snow-cat" />
-        <img src="static/img/sleeping-costume.jpg" width="150" height="200" alt="sleeping-cat" />
-        <img src="static/img/minion-cap.jpg" width="150" height="200" alt="minion-cat" />
+        <img src="static/img/food-cat.jpg" alt="food-cat" />
+        <img src="static/img/snow-cat.jpg" alt="snow-cat" />
+        <img src="static/img/sleeping-costume.jpg" alt="sleeping-cat" />
+        <img src="static/img/minion-cap.jpg" alt="minion-cat" />
     </aside>
 
     <footer class="footer">
@@ -168,16 +166,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("a.nav-link").click(function (event) {
-                event.preventDefault();
-                $("html, body").animate({
-                    scrollTop: $($(this).attr("href")).offset().top
-                }, 800);
-            });
-        });
-    </script>
+    <script src="scripts/scroll.js"></script>
 </body>
 
 </html>
